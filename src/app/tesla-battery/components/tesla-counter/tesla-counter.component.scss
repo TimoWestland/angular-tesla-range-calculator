@@ -1,0 +1,90 @@
+.tesla-counter {
+  float: left;
+  width: 230px;
+
+  &__title {
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+
+  &__container {
+    margin: 10px 0 0;
+    padding-right: 40px;
+
+    input[type='number'] {
+      border: 0;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+    }
+  }
+
+  &__number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 400;
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 35px;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    padding: 18px 0 0 30px;
+    background-color: #F7F7F7;
+    background-position: 24.21053% 9px;
+    background-size: 44px;
+    &:focus {
+      background-color: #F2F2F2;
+      outline: none;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+
+    button {
+      outline: 0;
+      width: 30px;
+      color: #008DFF;
+      cursor: pointer;
+      display: block;
+      padding: 11px 0;
+      vertical-align: middle;
+      border: 0;
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      &[disabled] {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+      &:first-child {
+        border-bottom: 1px solid #FFFFFF;
+        background-image: url(assets/counter/up.svg);
+      }
+      &:last-child {
+        border-top: 1px solid #CCCCCC;
+        background-image: url(assets/counter/down.svg);
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.tesla-stats {
+  margin: -70px 0 30px;
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 130px;
+      position: relative;
+      p {
+        font-size: 40px;
+        font-weight: normal;
+        font-family: 'Roboto', sans-serif;
+        display: block;
+        position: relative;
+        padding: 0 18px 0 0;
+        color: #008DFF;
+        text-align: right;
+        &::after {
+          content: 'MI';
+          font-size: 14px;
+          position: absolute;
+          top: 8px;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &-icon {
+    height: 20px;
+    background-size: auto 13px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    &--60 {
+      background-image: url(assets/models/60.svg);
+    }
+    &--60d {
+      background-image: url(assets/models/60d.svg);
+    }
+    &--75 {
+      background-image: url(assets/models/75.svg);
+    }
+    &--75d {
+      background-image: url(assets/models/75d.svg);
+    }
+    &--90d {
+      background-image: url(assets/models/90d.svg);
+    }
+    &--p100d {
+      background-image: url(assets/models/p100d.svg);
+    }
+  }
+}
